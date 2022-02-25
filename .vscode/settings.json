@@ -3,10 +3,17 @@
         "tsplot"
     ],
     "cSpell.words": [
+        "amax",
+        "astype",
         "Jmps",
         "Murali",
+        "nsig",
+        "pmax",
+        "pmin",
         "Segs",
         "timeseries",
-        "Yeddanapudi"
+        "tmax",
+        "Yeddanapudi",
+        "yrng"
     ]
 }

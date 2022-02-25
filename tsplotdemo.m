@@ -1,14 +1,23 @@
-function ts = gents
-% GENTS Generates a random piecewise continuous timeseries with about 1000
-% time points between [0 100] with ~10 discontinuities.
+
+%% Demo tsplot.
 
 % By: Murali Yeddanapudi, 18-Feb-2022
 
-%%
-n = 1001;
-nb = 10;
+ts = gents; % geenrate an interesting timeseries with discontinuities
+tsplot(ts); % and plot it.
 
-tmax = 100;
+
+%%
+function ts = gents
+% GENTS Generates a random piecewise continuous timeseries with about 1000
+% time points between [0 100] and about 10 discontinuities, indicated by
+% repeated time values.
+
+%%
+n = 1001; % number of time points
+nb = 10; % number of discontinuities
+
+tmax = 100; % time span is [0, 100]
 t = linspace(0,tmax,n);
 
 %%
@@ -43,4 +52,6 @@ for ib=1:numel(bidx)
 end
 
 %%
-ts = timeseries(y',t');
+ts = timeseries(y',t'); % return the time series object
+
+end % gents
